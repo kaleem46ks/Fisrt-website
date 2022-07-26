@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Website</title>
+  <link rel="icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Navbar content -->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            Login
+          </button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signupModal">
+            Sign up
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">
+            Login to My Website
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" />
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SignUp Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">
+            Creat a new account
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" />
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Creat account
+            </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
+        aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="https://source.unsplash.com/1400x500/?universe,cosmos" class="d-block w-100" alt="...">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="https://source.unsplash.com/1400x500/?universe,interstellar" class="d-block w-100" alt="...">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1400x500/?universe,blackhole" class="d-block w-100" alt="...">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container px-4 py-5" id="icon-grid">
+    <h2 class="pb-2 border-bottom">Sci-Fi Topics</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <!-- <img src="/home-icon.png" class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em" alt=""> -->
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <div>
+          <h4 class="fw-bold mb-0">Space Galaxy Adventure</h4>
+          <p>An aspect of the universe we take for granted is that it's three dimensional — there are three
+            perpendicular directions you can move in. Some theories, however, suggest another spatial dimension — which
+            we can't perceive directly — in another perpendicular direction. This higher dimensional space is referred
+            to as "the bulk," while our universe is a three-dimensional membrane — or "brane" — floating inside the
+            bulk.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#cpu-fill"></use>
+        </svg>
+        <div>
+          <h4 class="fw-bold mb-0">Into The Stars</h4>
+          <p>A well defined theory of star formation does not yet exist. Four major groups of star formation theory are
+            identified. These deal with formation by collapse under gravity, by random accretion, by condensation, and
+            by processes associated with the activity of galactic nuclei.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#calendar3"></use>
+        </svg>
+        <div>
+          <h4 class="fw-bold mb-0">Dark Invasion</h4>
+          <p>Dark Invasion: 1915: Germany's Secret War and the Hunt for the First Terrorist Cell in America is a
+            non-fiction book written by the American author, Howard Blum. It was published by Crown Publishing Group on
+            February 11, 2014. The American edition was issued by Harper in 2014.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#home"></use>
+        </svg>
+        <div>
+          <h4 class="fw-bold mb-0">Futuristic Space Technology</h4>
+          <p>"NASA's mission to explore the universe requires new technologies and new ways of doing things," said Jim
+            Reuter, associate administrator for NASA's Space Technology Mission Directorate (STMD) at the agency’s
+            headquarters in Washington. "Studying these creative ideas is the first step to turn science fiction into
+            science fact."<br>
+            The selected concepts include 12 new projects for Phase I study, as well as five Phase II awards that will
+            allow researchers to continue their prior work on innovative concepts.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#speedometer2"></use>
+        </svg>
+        <div>
+          <h4 class="fw-bold mb-0">Aliens of a New Kind</h4>
+          <p>The discovery is helping researchers understand what might linger on the bizarre surface of Saturn's moon
+            Titan.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#toggles2"></use>
+        </svg>
+        <div>
+          <h4 class="fw-bold mb-0">Earth To Unknown</h4>
+          <p>Some things are meant to stay forgotten...Former Centurion Space Force Captain Nathan Stacker is a
+            criminal. He isn't proud of it, but the truth is there aren't many options for men like him in a place like
+            Proxima - humankind's closest settlement to Earth.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#geo-fill"></use>
+        </svg>
+        <div>
+          <h4 class="fw-bold mb-0">Dark Energy</h4>
+          <p>More is unknown than is known. We know how much dark energy there is because we know how it affects the
+            universe's expansion. Other than that, it is a complete mystery. But it is an important mystery. It turns
+            out that roughly 68% of the universe is dark energy. Dark matter makes up about 27%. </p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#tools"></use>
+        </svg>
+        <div>
+          <h4 class="fw-bold mb-0">Dangerous Moon</h4>
+          <p>PThe Moon has an atmosphere so tenuous as to be nearly vacuum, with a total mass of less than 10 tonnes
+            (9.8 long tons; 11 short tons).[84] The surface pressure of this small mass is around 3 × 10−15 atm (0.3
+            nPa); it varies with the lunar day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><img src="/home-icon.png" class="bi" width="30" height="24" alt=""></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="https://twitter.com/" target="_blank"><svg class="bi" width="24" height="24"><img src="/twitter.png" class="bi" width="24" height="24" alt=""></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/" target="_blank"><svg class="bi" width="24" height="24"><img src="/87390.png" class="bi" width="24" height="24" alt=""></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/" target="_blank"><svg class="bi" width="24" height="24"><img src="/facebook.png" class="bi" width="24" height="24" alt=""></svg></a></li>
+    </ul>
+  </footer>
+</div>
+
+  <script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
